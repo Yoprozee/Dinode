@@ -1,70 +1,103 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>Dinode</title>
-			<link rel = "styleshet" href = "C:\Users\HP\Documents\www.w3schools.com\w3css\4\w3.css">
-			<link rel = "stylesheet" href = "./fonts/fontawesome4/font-awesome-4.7.0/css/font-awesome.min.css">
-			<link rel = "stylesheet" href = "C:\Users\HP\Documents\Dinode\fontawesome4\font-awesome-4.7.0\css\font-awesome.min.css">
-			<script src = "script.js"></script>
-		</head>
-		
-		<body>
-		<!-- Header starts here -->
-			<header class = "w3-container w3-purple w3-center " id = "pageheader" >
-				<span class = "w3-button w3-hover-blue w3-left">&#9776</span><p class = "w3-center">Dinode</p>
-			</header>
-		<!-- Header ends here -->
-		
-		<!-- Top navigaion bar starts here -->
-		
-			<div class = "w3-bar w3-purple" id = "topnavbar">
-				<button class = "w3-bar-item w3-hover-blue w3-purple">
-				<i class = "fa fa-home"></i>
-				Home
-				</button>
-				
-				<button class = "w3-bar-item w3-hover-blue w3-purple">
-				<i class = "fa fa-sticky-note-o"></i>
-				News
-				</button>
-				
-				<button class = "w3-bar-item w3-hover-blue w3-purple">
-				<i class = "fa fa-shopping-cart"></i>
-				Products
-				</button>
-				
-				<!-- Right collapsible search bar starts here -->
-				
-				<button class = "w3-bar-item w3-hover-white w3-border w3-right w3-white w3-round w3-button"  onclick = "showId('searchsidebar')" >
-				<i class = "fa fa-search"></i>
-				</button>
-				
-				<div class = "w3-sidebar w3-bar-block w3-border w3-animate-right" style = "width:25%;display:none;right:0" id = "searchsidebar" >
-					<div class = "w3-cell"><img src = "searchicon.png" />"</i></div>
-					<div  class = "w3-cell" ><input class = "w3-bar-item w3-round w3-input" type = "text" placeholder = "Search..."></div>
-					<div class = "w3-cell w3-text-black"><button class = "w3-button w3-hover-red w3-right"  onclick = "hideId('searchsidebar')" >&times</button></div>
-					<ul class = "w3-bar-item w3-ul w3-text-black">
-						<li>Adam</li>
-						<li>Mimi</li>
-					</ul>
-				</div>
-				
-				<!-- Right collapsible search bar ends here -->
+<html>
+
+<head>
+	<title>Dinode</title>
+	<link rel="stylesheet" href="./css/w3.css">
+	<link rel="stylesheet" href="./fonts/fontawesome4/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="./css/st_10.css">
+	<script src="script.js">
+	</script>
+</head>
+
+<body>
+	<!-- Header starts here -->
+	<header class="w3-container w3-purple w3-center " id="pageheader">
+		<span class="w3-button w3-hover-blue w3-left">&#9776</span>
+		<p class="w3-center">Dinode</p>
+	</header>
+
+	<!-- Header ends here -->
+
+	<!-- Top navigaion bar starts here -->
+
+	<div class="w3-bar w3-purple" id="topnavbar">
+		<button class="w3-bar-item w3-hover-blue w3-purple">
+			<i class="fa fa-home"></i>
+			Home
+		</button>
+
+		<button class="w3-bar-item w3-hover-blue w3-purple">
+			<i class="fa fa-sticky-note-o"></i>
+			News
+		</button>
+
+		<button class="w3-bar-item w3-hover-blue w3-purple">
+			<i class="fa fa-shopping-cart"></i>
+			Products
+		</button>
+
+		<!-- Right collapsible search bar starts here -->
+
+		<button class="w3-bar-item w3-hover-white w3-border w3-right w3-white w3-round w3-button"
+			onclick="showId('searchsidebar')">
+			<i class="fa fa-search"></i>
+		</button>
+
+		<div class="w3-sidebar w3-bar-block w3-border w3-animate-right" style="width:25%;display:none;right:0"
+			id="searchsidebar">
+			<div class="w3-cell"><img src="./assets/searchicon.png" />"</i></div>
+			<div class="w3-cell"><input class="w3-bar-item w3-round w3-input" type="text" placeholder="Search..."></div>
+			<div class="w3-cell w3-text-black"><button class="w3-button w3-hover-red w3-right"
+					onclick="hideId('searchsidebar')">&times</button></div>
+			<ul class="w3-bar-item w3-ul w3-text-black">
+				<li>Adam</li>
+				<li>Mimi</li>
+			</ul>
+		</div>
+
+		<!-- Right collapsible search bar ends here -->
+	</div>
+	<!-- Top navigaion bar ends here -->
+
+	<!-- Page content starts here -->
+	<!-- Home Tab content starts here -->
+	<div class="w3-container" onclick="hideId('searchsidebar')" style="height:100%;">
+		<ul class="w3-ul w3-center">
+			<li "w3-center"><img src="./assets/dinodeHomeTab_a.png" /><br />
+				<p "w3-center">The home of AI</p>
+			</li>
+			<li "w3-center"><img src="./assets/dinodeHomeTab_b.png" /><br />
+				<p "w3-center">Get engaged with our state-of-the-art chatbots</p>
+			</li>
+		</ul>
+	</div>
+	<!-- Home Tab content ends here -->
+	<!-- Page content ends here -->
+
+	<!-- Footer starts here -->
+	<footer class="w3-container w3-gray">
+		<div class="w3-container w3-xlarge w3-center">
+			<i class="fa fa-globe w3-text-indigo"></i>
+			<u></u>Contact Us
+		</div>
+		<div class="w3-center">
+			<div>
+				<i class="fa fa-telegram w3-text-blue"></i>
+				@Dinode
 			</div>
-		<!-- Top navigaion bar ends here -->
-		
-		<!-- Page content starts here -->
-			<!-- Home Tab content starts here -->
-				<div class = "w3-container" onclick = "hideId('searchsidebar')"  style = "height:100%;" >
-					<ul class = "w3-ul w3-center" >
-						<li  "w3-center"><img = "dinodeHome.png"/><br/><p  "w3-center" >The home of AI</p></li>
-						<li  "w3-center"><img = "dinodeHome.png"/><br/><p  "w3-center" >The home of AI</p></li>
-					</ul>
-				</div>
-			<!-- Home Tab content ends here -->
-		<!-- Page content ends here -->
-		
-		<!-- Footer starts here -->
-		<!-- Footer ends here -->
-		</body>
-	</html>
+			<div>
+				<i class="fa fa-facebook-square w3-text-blue"></i>
+				@DinodeOfficial
+			</div>
+			<div>
+				<i class="fa fa-twitter-square w3-text-blue"></i>
+				@DinodeAI
+			</div>
+		</div>
+		<div class="fa fa-copyright">Copyright Dinode. All rights reserved.</div>
+	</footer>
+	<!-- Footer ends here -->
+</body>
+
+</html>
